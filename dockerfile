@@ -28,7 +28,7 @@ RUN git config --global user.email "sara.stray@online.no" \
     && mkdir -p github.com/sarastray
 
 USER root
-RUN curl -SL https://go.dev/dl/go1.21.7.OS-ARCH.tar.gz \
+RUN curl -SL https://go.dev/dl/go1.21.7.windows-x86-64.tar.gz \
     | tar xvz -C /usr/local
 
 USER sarastray
