@@ -11,8 +11,7 @@ RUN apt-get update \
     curl \
     git
 
-RUN useradd -G sudo -m -d /home/sarastray -s /bin/bash -p "$(openssl
-sara2002 -1 sara2002)" sarastray
+RUN useradd -G sudo -m -d /home/sarastray -s /bin/bash -p "$(openssl passwd -1 sara2002)" sarastray
 
 USER sarastray
 WORKDIR /home/sarastray
