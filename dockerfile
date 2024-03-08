@@ -25,10 +25,10 @@ RUN mkdir hacking \
 RUN git config --global user.email "sara.stray@online.no" \
     && git config --global user.name "sarastray" \
     && git config --global url."https://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:@github.com/".insteadOf "https://github.com" \
-    && mkdir -p github.com/sarastray
+    && mkdir -p github.com/sarastray/sem02v24
 
 USER root
-RUN curl -SL https://go.dev/dl/go1.21.7.windows-x86-64.tar.gz \
+RUN curl -SL https://go.dev/dl/go1.21.7.linux-386.tar.gz \
     | tar xvz -C /usr/local
 
 USER sarastray
